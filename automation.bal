@@ -1,6 +1,6 @@
 import ballerina/log;
 
-enum Color {
+public enum Color {
     RED,
     GREEN,
     BLUE
