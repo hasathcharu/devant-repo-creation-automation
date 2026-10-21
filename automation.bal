@@ -6,9 +6,9 @@ public enum Color {
     BLUE
 }
 
-public function main(string employee_id, string employee_name, string department_name, int located_floor) returns error? {
+public function main(string version1, string employee_name, string department_name, int located_floor) returns error? {
     do {
-        log:printInfo(string `${employee_id}${employee_name}${department_name}${located_floor}`);
+        log:printInfo(string `${version1}${employee_name}${department_name}${located_floor}`);
     } on fail error e {
         log:printError("Error occurred", 'error = e);
         return e;
